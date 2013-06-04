@@ -1,7 +1,7 @@
 wakeloader
 ==========
 
-Soruce loader for JavaScript.
+No-module synchronous soruce loader for JavaScript.
 
 #####Properties:
     string    main-file    path to main.js file
@@ -36,3 +36,7 @@ You can set properties by two ways:
     </script>
     
 Also you can set queue in `data-queue` attribute. 
+
+######Example of usage
+    require('app/bootstrap.min','app/mywidgets');
+    
