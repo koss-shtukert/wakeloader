@@ -1,7 +1,7 @@
 wakeloader
 ==========
 
-No-module synchronous soruce loader for JavaScript.
+No-module synchronous source loader for JavaScript.
 
 #####Properties:
     string    main-file    path to main.js file
