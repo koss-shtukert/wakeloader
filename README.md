@@ -6,7 +6,7 @@ No-module synchronous source loader for JavaScript.
 #####Properties:
     string    main-file    path to main.js file
     string    main         name of main function
-    string    update       string to update queue
+    string    update       when changed cache of queue will updated
     bool      quick        if true, main function will fired on DOMContentLoaded, if false - on load
     bool      cached       caching scripts queue
     object    alias        paths aliases
