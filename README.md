@@ -18,26 +18,26 @@ You can set properties by two ways:
 ######1. By creating object before loading script
     <script>
         wakeloader = {
-            mainFile :  "app/main",
+            mainFile :  "/app/main",
             main     :  "main",
             update   :  "04.04.2013",
             quick    :  true,
             cahced   :  true,
             alias    :  { "http://code.jquery.com/" : "jquery/" },
-            queue    :  ["app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]
+            queue    :  ["/app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]
         };
     </script>
-    <script wake-loader src="wake/loader.min.js"></script>
+    <script wake-loader src="/loader.min.js"></script>
     
 ######2. By setting attributes to `<script>`
     <script wake-loader data-main-file="app/main" data-main data-update="04.04.2013" 
-            data-cached data-quick data-alias='{ "http://code.jquery.com/" : "jquery/" }' src="wake/loader.min.js">
-        ["app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]            
+            data-cached data-quick data-alias='{ "http://code.jquery.com/" : "jquery/" }' src="/loader.min.js">
+        ["/app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]            
     </script>
     
 Also you can set queue in `data-queue` attribute. 
 
 ######Example of usage
-    require('app/bootstrap.min','app/mywidgets'); // load sources
+    require('/app/bootstrap.min','/app/mywidgets'); // load sources
     wakeloader.updateQueue(); // reset cache
     
