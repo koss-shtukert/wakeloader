@@ -22,7 +22,7 @@ You can set properties by two ways:
             main     :  "main",
             update   :  "04.04.2013",
             quick    :  true,
-            cahced   :  true,
+            cached   :  true,
             alias    :  { "http://code.jquery.com/" : "jquery/" },
             queue    :  ["/app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]
         };
