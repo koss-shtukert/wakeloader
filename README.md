@@ -30,7 +30,7 @@ You can set properties by two ways:
     <script wake-loader src="/loader.min.js"></script>
     
 ######2. By setting attributes to `<script>`
-    <script wake-loader data-main-file="app/main" data-main data-update="04.04.2013" 
+    <script wake-loader data-main-file="/app/main" data-main data-update="04.04.2013" 
             data-cached data-quick data-alias='{ "http://code.jquery.com/" : "jquery/" }' src="/loader.min.js">
         ["/app/widget","jquery/jquery-2.0.2.min",{ "http://some.serv.er/lib/" : ["sugar","backbone"] }]            
     </script>
