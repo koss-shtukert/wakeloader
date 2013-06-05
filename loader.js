@@ -45,7 +45,7 @@ Methods:
         script.src = url;
         if(islast) script.onload = function(){ 
             mcl = false; 
-            if(ldd) onload();
+            if(ldd || (wl.async && wakeloader.quick)) onload();
         };
         q.appendChild(script);
     }
@@ -126,11 +126,11 @@ Methods:
     } else localStorage.wakeloaderQueue = '';
     if(!wakeloader.queue) wakeloader.queue = [];
 
-    if(!wakeloader.mainfile && wl.dataset.mainFile){ 
-        wakeloader.mainfile = unalias(wl.dataset.mainFile); 
-        wakeloader.queue.push(wakeloader.mainfile); 
+    if(!wakeloader.mainFile && wl.dataset.mainFile){ 
+        wakeloader.mainFile = unalias(wl.dataset.mainFile); 
+        wakeloader.queue.push(wakeloader.mainFile); 
     }
-    if(!wakeloader.mainfile) wakeloader.mainfile = false;
+    if(!wakeloader.mainFile) wakeloader.mainFile = false;
 
     if(!wakeloader.alias && wl.dataset.alias){ 
         try{ 

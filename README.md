@@ -38,5 +38,6 @@ You can set properties by two ways:
 Also you can set queue in `data-queue` attribute. 
 
 ######Example of usage
-    require('app/bootstrap.min','app/mywidgets');
+    require('app/bootstrap.min','app/mywidgets'); // load sources
+    wakeloader.updateQueue(); // reset cache
     
