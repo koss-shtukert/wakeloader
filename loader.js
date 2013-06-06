@@ -109,10 +109,9 @@ Methods:
             wakeloader.queue = false; 
         };
     }
-
+    
     if(wakeloader.cached){
         if(localStorage.wakeloaderUpdate != wakeloader.update){
-            wakeloader.queue = false;
             localStorage.wakeloaderQueue = '';
             localStorage.wakeloaderUpdate = wakeloader.update;
         } else if(localStorage.wakeloaderQueue){ 
